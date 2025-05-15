@@ -1,0 +1,47 @@
+.container-home {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header - main - footer */
+  min-height: 100vh; /* asegura que ocupe toda la pantalla */
+  background-color: #000000;
+  color: white;
+  font-family: var(--font-base, 'Inter', sans-serif);
+}
+
+/* Header */
+.container-home > header {
+  padding: 5rem 1rem 0;
+  text-align: center;
+}
+
+/* Main */
+.container-home > main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Footer */
+.container-home > footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #000000;
+}
+
+/* Responsive para tablet */
+@media (min-width: 768px) {
+  .container-home {
+    padding: 0 2rem;
+  }
+}
+
+/* Responsive para desktop */
+@media (min-width: 1024px) {
+  .container-home {
+    padding: 0 4rem;
+  }
+
+  .container-home > main {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: transparent; /* o usa var(--color-bg) si prefieres */
+  color: var(--color-text, #f8f8f8);
+  text-align: center;
+  font-family: var(--font-base, 'Inter', sans-serif);
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.footer h2 {
+  font-family: var(--font-logo, 'Poppins', sans-serif);
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 300;
+  color: var(--color-text-secondary, #d1d5db);
+}
+
+.footer .subMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer .subMenu a {
+  color: var(--color-text-secondary, #d1d5db);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color var(--transition, 0.3s ease);
+}
+
+.footer .subMenu a:hover {
+  color: var(--color-secondary, #0ea5e9);
+}
+
+/* Tablet y escritorio */
+@media (min-width: 768px) {
+  .footer {
+    padding: 2rem 4rem;
+  }
+
+  .footer .subMenu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer .subMenu a {
+    margin: 0 1rem;
+  }
+}

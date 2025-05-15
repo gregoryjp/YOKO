@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  place-items: center;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  background-color: transparent; /* hereda el color si hace falta */
+  font-family: var(--font-logo, 'Poppins', sans-serif);
+  text-align: center;
+}
+
+ img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.logo-container h1 {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: var(--color-text, white);
+  letter-spacing: 1px;
+}
